@@ -1,0 +1,146 @@
+body {
+  background: linear-gradient(135deg, #be006c 0%, #34008f 70%);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #f0f0f0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+p {
+  font-family: "JetBrains Mono", monospace !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.margin-top-200 {
+  margin-top: 150px;
+}
+
+.padding-100 {
+  padding: 200px;
+}
+
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer.footer .social-link {
+  display: block;
+  text-decoration: none;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #be006c;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer.footer .social-link.icon-email:hover {
+  background-color: #d44638;
+  text-decoration: none;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer.footer .social-link.icon-linkedin:hover {
+  background-color: #0077b5;
+  text-decoration: none;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer.footer .social-link.icon-github:hover {
+  background-color: #000000;
+  text-decoration: none;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.icon-lg {
+  width: 32px;
+  height: 32px;
+}
+
+.text-light-grey {
+  color: lightgray;
+}
+
+.welcome-text {
+  font-family: "Tourney", sans-serif;
+  font-size: 90px;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.animate-blur-in {
+  animation: text-blur-in 4s ease forwards;
+}
+
+.animate-pop-up {
+  animation: text-pop-up-tr 1s ease forwards;
+}
+
+.animate-focus-in {
+  animation: text-focus-in 2s ease forwards;
+}
+
+.img-darker {
+  filter: brightness(0.7);
+}
+
+.transition-brightness {
+  filter: brightness(0.7); /* Valor inicial */
+  transition: filter 0.5s ease-in-out; /* A transição do filtro dura 0.5 segundos */
+}
+
+.transition-brightness:hover {
+  filter: brightness(1); /* Valor quando a classe for aplicada, no caso em hover */
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-blur-in {
+  0% {
+    -webkit-filter: blur(12px) opacity(0);
+    filter: blur(12px) opacity(0);
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+
